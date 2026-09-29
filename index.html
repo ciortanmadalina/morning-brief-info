@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Morning Brief, a personal daily email digest of selected newsletters, news, and weather.">
+  <title>Morning Brief</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">Morning Brief</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html" aria-current="page">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+  <main>
+    <p class="eyebrow">Personal daily digest</p>
+    <h1>Morning Brief</h1>
+    <p class="lead">Selected newsletters, news, and weather in one daily email.</p>
+    <section aria-labelledby="purpose">
+      <h2 id="purpose">Purpose</h2>
+      <p>Morning Brief is a private automation operated by Madalina Ciortan for personal use. It combines selected Gmail newsletters, public news, and weather, then emails a digest to the recipients configured by its owner. It is not a public sign-up service.</p>
+    </section>
+    <section aria-labelledby="access">
+      <h2 id="access">Google account access</h2>
+      <p>The owner authorizes Gmail read and send access through Google OAuth. Newsletter retrieval is limited by the application to configured labels and time windows. Read access also verifies the account and checks sent-message records to prevent duplicate delivery. Google grants mailbox-level scopes; it does not enforce the application's label filter.</p>
+      <p>Selected newsletter text is sent to the Anthropic API for summarization. Scheduled processing runs on Railway. The owner can also run previews locally.</p>
+    </section>
+    <section aria-labelledby="contact">
+      <h2 id="contact">Contact</h2>
+      <p>Questions about Morning Brief: <a href="mailto:ciortanmadalina@gmail.com">ciortanmadalina@gmail.com</a>.</p>
+      <p>Read the <a href="privacy.html">privacy policy</a> and <a href="terms.html">terms of use</a> for details.</p>
+    </section>
+  </main>
+  <footer>Morning Brief | Personal automation</footer>
+</body>
+</html>

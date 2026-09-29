@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How Morning Brief accesses, processes, shares, and retains Google user data.">
+  <title>Privacy Policy | Morning Brief</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">Morning Brief</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">About</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+  <main>
+    <p class="eyebrow">Last updated: September 29, 2026</p>
+    <h1>Privacy policy</h1>
+    <p class="lead">Morning Brief is a personal email automation operated by Madalina Ciortan.</p>
+    <section aria-labelledby="access">
+      <h2 id="access">Information accessed</h2>
+      <p>With the account owner's authorization, Morning Brief uses the Gmail API to read account information, labels, and selected newsletter messages, including headers, identifiers, text, and links. It uses Gmail send permission to deliver digests and read permission to check sent-message records for delivery reconciliation.</p>
+      <p>Google OAuth permissions cover the mailbox. The application restricts newsletter selection to configured labels and date windows; those filters are not a separate Google permission boundary.</p>
+      <p>Configuration includes sender and recipient addresses, newsletter labels, and a weather location. OAuth credentials and provider API keys authenticate the configured services.</p>
+    </section>
+    <section aria-labelledby="sharing">
+      <h2 id="sharing">Use and sharing</h2>
+      <p>Data is used to select newsletter content, produce summaries, deliver the requested digest, diagnose failures, and prevent duplicate sends.</p>
+      <ul>
+        <li><strong>Google:</strong> provides Gmail access, OAuth authorization, and email delivery.</li>
+        <li><strong>Anthropic:</strong> receives selected newsletter text and associated context, which may include personal information and links, through its API for summarization. Morning Brief does not use Gmail data to train AI models.</li>
+        <li><strong>Railway:</strong> hosts scheduled processing, configured credentials, operational logs, and the persistent delivery database.</li>
+        <li><strong>Configured recipients:</strong> receive digest summaries and selected source links. Recipients on the same message can see each other's addresses.</li>
+      </ul>
+      <p>Morning Brief does not sell Google user data or use it for advertising. Transfers to providers are for the requested digest functionality. Provider-side handling and retention are also subject to applicable provider terms and account settings; Morning Brief does not promise zero retention by those providers.</p>
+      <p>Morning Brief's use and transfer of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+    </section>
+    <section aria-labelledby="storage">
+      <h2 id="storage">Storage and retention</h2>
+      <p>Scheduled generation normally processes message content in memory. The Railway delivery database stores delivery identifiers, recipient bookkeeping, timestamps, statuses, and usage or cost information, not raw email bodies or OAuth tokens. Operational logs may include delivery metadata and diagnostic results.</p>
+      <p>Local authorization saves credentials on the owner's computer. Railway receives credentials through service variables and refreshes access tokens in memory.</p>
+      <p>Local previews may save generated HTML, Markdown, email files, and source references. Explicit debug mode can also save newsletter bodies, prompts, model responses, and personalized links. These private artifacts are not intended for publication.</p>
+      <p>There is no automatic deletion schedule for local artifacts or delivery records; they remain until the owner removes them. Delivered email remains in the relevant mailboxes until deleted under their settings. Providers may retain logs or backups under their own policies.</p>
+    </section>
+    <section aria-labelledby="control">
+      <h2 id="control">Control and deletion</h2>
+      <p>The owner can disable delivery, change selected labels or recipients, and revoke access through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Revocation stops future authorized access but does not erase existing digests, local files, or delivery records.</p>
+      <p>For access, correction, or deletion requests, contact <a href="mailto:ciortanmadalina@gmail.com">ciortanmadalina@gmail.com</a>. Deleting delivery records should be coordinated with stopping the scheduler because those records prevent duplicate sends. Provider-held data may require separate requests to those providers.</p>
+    </section>
+    <section aria-labelledby="website">
+      <h2 id="website">This information website</h2>
+      <p>These pages contain no mailbox content, sign-in forms, analytics scripts, or application-set cookies. GitHub Pages hosts the site and may process technical request information, such as IP addresses, under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+    </section>
+    <section aria-labelledby="changes">
+      <h2 id="changes">Changes</h2>
+      <p>This policy will be updated when the described data handling changes. The date above identifies the latest revision.</p>
+    </section>
+  </main>
+  <footer><a href="index.html">Morning Brief</a> | <a href="terms.html">Terms of use</a></footer>
+</body>
+</html>
